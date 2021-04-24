@@ -24,12 +24,12 @@ db.create_all(app=app)
 
 #------Login------------------------------------------------#
 
-@app.route("/login", methods =['GET'])
+@app.route("/", methods =['GET'])
 def login():
 	form = Login()
 	return render_template('index.html', form = form)
 
-@app.route("/login", methods =['POST'])
+@app.route("/", methods =['POST'])
 def loginUser():
 	form = Login()
 	data = request.form
