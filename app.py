@@ -18,7 +18,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 db.init_app(app)
 login_manager.init_app(app)
 
-app.app_context().push()
+
 db.create_all(app=app)
 
 
